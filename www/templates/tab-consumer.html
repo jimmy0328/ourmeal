@@ -1,5 +1,17 @@
+<style type="text/css">
+  .money{
+    float:right;
+  }
+</style>
 <ion-view title="本月消費">
   <ion-content>
-    <h1>Consumer Page</h1>
+   <h4 style="margin-left:20px">本月消費: {{total_sum}} 元</h4>
+
+   <ul class="list list-inset">
+    <li class="item" ng-repeat="order in order_list">
+      {{order.order_date}} {{order.store}} {{order.name}}
+      <span class="money">{{order.price}}元</span>
+    </li>
+  </ul>
   </ion-content>
 </ion-view>

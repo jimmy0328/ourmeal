@@ -28,6 +28,13 @@ angular.module('starter.controllers', [])
 })
 //本月消費
 .controller('ConsumerCtrl', function($scope) {
+  $scope.total_sum = "280";
+  $scope.order_list = [
+    {id:1,order_date:"2014/10/11",store: "正忠便當",name: "排骨飯",price:"65"},
+    {id:2,order_date:"2014/10/9",store: "味佳便當",name: "排骨飯",price:"70"},
+    {id:3,order_date:"2014/10/5",store: "真好吃便當",name: "雞腿便飯",price:"85"},
+    {id:4,order_date:"2014/10/1",store: "阿福",name: "牛肉湯麵",price:"60"}
+  ];
 
 })
 //歷史訂購記錄
