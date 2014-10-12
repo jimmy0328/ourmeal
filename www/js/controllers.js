@@ -2,7 +2,14 @@ angular.module('starter.controllers', [])
 
 //會員登入
 .controller('LoginCtrl', function($scope) {
+  $scope.username = "Jimmy";
+  $scope.password = "";
 
+  $scope.login =function(){
+    //TODO 使用$http POST
+    alert("Login");
+
+  }
 
 })
 

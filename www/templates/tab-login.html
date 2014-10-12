@@ -1,5 +1,17 @@
 <ion-view title="會員登入">
-  <ion-content class="has-header">
-    <h1>Login Page</h1>
+  <ion-content>
+    <div class="list">
+      <label class="item item-input item-stacked-label">
+        <span class="input-label">UserName</span>
+        <input type="text" placeholder="Jack" ng-model="username">
+      </label>
+      <label class="item item-input item-stacked-label">
+        <span class="input-label">Password</span>
+        <input type="password" ng-model='pwd' placeholder="預設為生日後4碼">
+      </label>
+      <button class="button  button-full ion-person button-positive" ng-click="login()">
+        登入
+      </button>
+    </div>
   </ion-content>
 </ion-view>
