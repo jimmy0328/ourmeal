@@ -70,6 +70,15 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
           controller: 'HistoryCtrl'
         }
       }
+    })
+    .state('tab.historyDetail', {//歷史訂購記錄
+      url: '/history/:month',
+      views: {
+        'tab-history': {
+          templateUrl: 'templates/history-detail.html',
+          controller: 'HistoryDetailCtrl'
+        }
+      }
     });
 
   $urlRouterProvider.otherwise('/tab/login');

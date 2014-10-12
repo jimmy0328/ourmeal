@@ -1,5 +1,14 @@
-<ion-view title="歷史訂購記錄">
-  <ion-content>
-    <h1>History Page</h1>
+<style type="text/css">
+  .money{
+    float:right;
+  }
+</style>
+<ion-view title="歷史訂購">
+  <ion-content class="has-header">
+    <ion-list >
+      <a class="item" ng-repeat="his in history_list" href="#/tab/history/{{his.id}}">{{his.order_date}}
+        <span class="money">{{his.price}} 元</span>
+      </a>
+    </ion-list>
   </ion-content>
 </ion-view>
