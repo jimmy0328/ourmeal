@@ -1,5 +1,24 @@
 <ion-view title="今日訂餐">
   <ion-content>
-    <h1>Order Page</h1>
+    <div class="list card">
+     <div class="item ">
+      <h2>今日訂餐－ {{storeName}}</h2>
+    </div>
+    <div class="item item-body" style="text-align:center;">
+      <img class="full-image" style="width:200px" src="http://ionicframework.com/img/ionic-logo-blog.png">
+      <p>
+        電話：{{store_tel}}
+      </p>
+    </div>
+    <div class="list">
+        <a class="item item-icon-left item-icon-right" ng-click="order(m)" ng-repeat="m in menu_list" >
+          <i class="icon ion-fork"></i>
+          {{m.name}} － {{m.price}}元
+          <i class="icon ion-ios7-checkmark">
+            <span class="badge badge-assertive"ng-show="m.recommand">推廌</span>  
+          </i>
+        </a>
+      </div>
+    </div>
   </ion-content>
 </ion-view>
